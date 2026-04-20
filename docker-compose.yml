@@ -1,0 +1,25 @@
+services:
+  rag-api:
+    build: .
+    ports:
+      - "8000:8000"
+    mem_limit: 5g
+    memswap_limit: 5g
+    environment:
+      - OLLAMA_URL=http://host.docker.internal:11434
+    volumes:
+      - ./vectorstore:/app/vectorstore
+      - ./docs:/app/docs
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+  rag-frontend:
+    build: .
+    ports:
+      - "8503:8503"
+    environment:
+      - API_URL=http://rag-api:8000
+    depends_on:
+      - rag-api
+    command: streamlit run frontend.py --server.port 8503 --server.address 0.0.0.0
+    restart: unless-stopped
