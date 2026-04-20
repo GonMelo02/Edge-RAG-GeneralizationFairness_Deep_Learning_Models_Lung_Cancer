@@ -98,7 +98,7 @@ cp .env.example .env
 docker compose up --build
 ```
 
-Frontend available at `http://localhost:8501`
+Frontend available at `http://localhost:8503`
 
 ---
 
@@ -107,3 +107,6 @@ Frontend available at `http://localhost:8501`
 - **Agentic workflows** — LangGraph multi-agent (Researcher + Clinical Reviewer)
 - **Advanced parsing** — IBM Docling for semantic table and layout extraction
 - **Hybrid search** — BM25 sparse + BGE-M3 dense retrieval with Cross-Encoder reranking
+
+---
+*Built by **[Gonçalo Melo](https://www.linkedin.com/in/gonçalo-melo-b885b0310/)**, MSc Bioinformatics Student*
