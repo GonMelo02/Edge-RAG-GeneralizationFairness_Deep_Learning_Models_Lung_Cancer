@@ -1,0 +1,25 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Vector Database
+vectorstore/
+db/
+chroma.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Environment Variables
+.env
+
+# Medical Documents (Privacy/Copyright)
+docs/*.pdf
