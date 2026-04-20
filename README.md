@@ -10,9 +10,11 @@ Built to help in a bioinformatics thesis about lung cancer research literature.
 ## Interface 
 
 ![Chat Interface](static/chat_ui.png)
+
 *The model strictly cites sources and pages inline to mitigate hallucinations.*
 
 ![Source Cards](static/sources_ui.png)
+
 *Transparent retrieval: Users can expand the sources to verify the exact document chunks and metadata used by the LLM.*
 
 ---
